@@ -25,6 +25,11 @@
     font-size: 64px;
 }
 
+.regular-56 {
+    font-weight: 400;
+    font-size: 56px;
+}
+
 .regular-32 {
     font-weight: 400;
     font-size: 32px;
@@ -33,6 +38,14 @@
 .regular-34 {
     font-weight: 400;
     font-size: 34px;
+}
+
+.regular-24 {
+    font-weight: 400;
+    font-size: 24px;
+    /*! Esto no puede ir aqui */
+    /* TODO: Corregir esto */
+    letter-spacing: 1px;
 }
 
 .regular-20 {
@@ -50,12 +63,27 @@
     font-size: 24px;
 }
 
+.light-16 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
 .bold-32 {
     font-weight: 700;
     font-size: 32px;
 }
 
+.bold-24 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .semi-bold-32 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.semi-bold-24 {
     font-weight: 600;
     font-size: 32px;
 }
@@ -69,6 +97,10 @@
     font-weight: 300;
     font-size: 16px;
     font-style: italic;
+    /*! Esto no puede ir aqui */
+    /* TODO: Corregir esto */
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .italic-24 {

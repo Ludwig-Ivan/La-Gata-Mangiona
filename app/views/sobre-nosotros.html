@@ -5,47 +5,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;
         1,14..32&family=Jacques+Francois&family=Jomolhari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../public/css/reset.css">
+    <link rel="stylesheet" href="../../public/css/sobre-nosotros.css">
+    <link rel="stylesheet" href="../../public/css/header.css">
+    <link rel="stylesheet" href="../../public/css/footer.css">
+    <link rel="stylesheet" href="../../public/css/colors.css">
+    <link rel="stylesheet" href="../../public/css/fonts.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nosotros</title>
 </head>
 
 <body>
-    <header>
-        <h1>LA GATA MANGIONA</h1>
+    <header class="header bg-black text-white">
+        <h1 class="jomolhari regular-20">LA GATA MANGIONA</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrito.html"><img src="#" alt="Icono de carrito-compra"></a></li>
+                <li><a class="jomolhari regular-20 text-white" href="index.html">Inicio</a></li>
+                <li><a class="jomolhari regular-20 text-white" href="menu.html">Menu</a></li>
+                <li><a class="jomolhari regular-20 text-white" href="contacto.html">Contacto</a></li>
+                <li><a class="jomolhari regular-20 text-white" href="carrito.html"><img
+                            src="../../public/icons/cart-shopping-fast.png" alt="Icono de carrito-compra"></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <img src="#" alt="Imagen de una pizza">
+    <main class="main bg-almendra-suave">
+        <div class="img-container">
+            <img src="../../public/img/pizza2.png" alt="Imagen de una pizza">
         </div>
-        <div>
-            <h1>Sobre nosotros</h1>
-            <p>
-                En <strong>La Gata Mangiona</strong> estamos especializados en
-                la auténtica pizza napolitana, elaborada a partir de una receta
+        <div class="text-container">
+            <h1 class="inter regular-56">Chi siamo</h1>
+            <p class="text inter regular-24">
+                En <strong class="inter bold-24">La Gata Mangiona</strong> estamos <br> especializados en
+                la auténtica pizza <br> napolitana, elaborada a partir de una receta <br>
                 que se ha transmitido a través de cinco
                 generaciones de pizzaioli.
             </p>
-            <div>
-                <section>
-                    <h2>Mision</h2>
-                    <p>
-                        Nuestra misión es ofrecer a nuestros clientes una experiencia
-                        gastronómica única, combinando la tradición de la pizza napolitana
-                        con ingredientes frescos y de alta calidad.
+            <div class="text-sections">
+                <section class="section bg-marfil-suave">
+                    <h2 class="inter semi-bold-20">Mision</h2>
+                    <p class="inter light-italic-16">
+                        Ofrecer a nuestros clientes la auténtica experiencia de la pizza italiana,
+                        elaborada con, recetas tradicionales<br> y una pasión <br> inigualable.
                     </p>
                 </section>
-                <section>
-                    <h2>Vision</h2>
-                    <p>
+                <section class="section bg-marfil-suave">
+                    <h2 class="inter semi-bold-20">Vision</h2>
+                    <p class="inter light-italic-16">
                         Expandir nuestra pasión por la cocina italiana, creando
                         un espacio donde las personas disfruten momentos
                         inolvidables en torno a una pizza artesanal.
@@ -54,13 +62,13 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>Derechos Reservados ©Checon’t - 2025 ®</p>
-        <nav>
+    <footer class="footer bg-black">
+        <p class="inter light-16 text-white">Derechos Reservados ©Checon’t - 2025 ®</p>
+        <nav class="social">
             <ul>
-                <li><a href="#"><img src="#" alt="Link facebook"></a></li>
-                <li><a href="#"><img src="#" alt="Link instagram"></a></li>
-                <li><a href="#"><img src="#" alt="Link x"></a></li>
+                <li><a href="#"><img src="../../public/icons/icon-facebook.png" alt="Link facebook"></a></li>
+                <li><a href="#"><img src="../../public/icons/icon-instagram.png" alt="Link instagram"></a></li>
+                <li class="border-white"><a href="#"><img src="../../public/icons/icon-x.png" alt="Link x"></a></li>
             </ul>
         </nav>
     </footer>
