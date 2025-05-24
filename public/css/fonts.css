@@ -1,0 +1,82 @@
+/*? Clase de estilo de fuente inter/jomolhari */
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jomolhari {
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jacques-francois {
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*? Clases de estilo de fuente light/regular/bold/semi-bold/italic/light-italic/medium -<size> */
+
+.regular-64 {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.regular-32 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.regular-34 {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.regular-20 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.light-32 {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.light-24 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.bold-32 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.semi-bold-32 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.semi-bold-20 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.light-italic-16 {
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.italic-24 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.medium-32 {
+    font-weight: 500;
+    font-size: 32px;
+}

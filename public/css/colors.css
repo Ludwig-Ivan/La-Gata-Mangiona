@@ -1,0 +1,85 @@
+/*? Clase de estilos para los colores de la aplicación */
+
+/*? Color de fondo */
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-almendra-suave {
+    background-color: #eeddd2;
+}
+
+.bg-canela-tostada {
+    background-color: #a68565;
+}
+
+.bg-marfil-suave {
+    background-color: #fff6e9;
+}
+
+/*? Color de texto */
+.text-black {
+    color: #000000;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-almendra-suave {
+    color: #eeddd2;
+}
+
+.text-canela-tostada {
+    color: #a68565;
+}
+
+.text-marfil-suave {
+    color: #fff6e9;
+}
+
+/*? Color de borde */
+.border-black {
+    border-color: #000000;
+}
+
+.border-white {
+    border-color: #FFFFFF;
+}
+
+.border-almendra-suave {
+    border-color: #eeddd2;
+}
+
+.border-canela-tostada {
+    border-color: #a68565;
+}
+
+.border-marfil-suave {
+    border-color: #fff6e9;
+}
+
+/*? Color de sombra */
+.shadow-black {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-white {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.shadow-almendra-suave {
+    box-shadow: 0 4px 8px rgba(238, 221, 210, 0.5);
+}
+
+.shadow-canela-tostada {
+    box-shadow: 0 4px 8px rgba(166, 133, 101, 0.5);
+}
+
+.shadow-marfil-suave {
+    box-shadow: 0 4px 8px rgba(255, 246, 233, 0.5);
+}
