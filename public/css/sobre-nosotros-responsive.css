@@ -1,0 +1,67 @@
+/*? Sobre nosotros styles resposive */
+
+@media screen and (max-width: 960px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 78%;
+        min-height: fit-content;
+        padding: 0px;
+        gap: 30px
+    }
+
+    .main .img-container {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .main .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0px;
+    }
+
+    .main .text-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .main .text-container .text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .main .text-container .text-sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .text-sections .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 250px;
+        gap: 12px;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    .text-sections .section p {
+        text-align: center;
+    }
+
+}

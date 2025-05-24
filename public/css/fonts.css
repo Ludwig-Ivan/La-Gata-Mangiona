@@ -43,8 +43,6 @@
 .regular-24 {
     font-weight: 400;
     font-size: 24px;
-    /*! Esto no puede ir aqui */
-    /* TODO: Corregir esto */
     letter-spacing: 1px;
 }
 
@@ -97,8 +95,6 @@
     font-weight: 300;
     font-size: 16px;
     font-style: italic;
-    /*! Esto no puede ir aqui */
-    /* TODO: Corregir esto */
     letter-spacing: 1px;
     line-height: 20px;
 }
