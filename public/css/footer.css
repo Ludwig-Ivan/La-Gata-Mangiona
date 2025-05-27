@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 12%;
+    height: 8%;
 }
 
 .footer .social {
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px
+    gap: 10px
 }
 
 .footer .social ul li {
@@ -40,16 +40,11 @@
 }
 
 .footer .social ul li a img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 .footer .social ul li:last-child {
     border-width: 2px;
     border-style: solid;
-}
-
-.footer .social ul li:last-child a img {
-    width: 48px;
-    height: 48px;
 }
