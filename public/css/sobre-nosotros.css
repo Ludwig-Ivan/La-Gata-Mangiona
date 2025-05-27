@@ -55,6 +55,7 @@ nav ul li a:hover img {
     height: 82%;
     padding: 0px 2rem;
     gap: 20px;
+    position: relative;
 }
 
 .main .img-container {
