@@ -2,9 +2,230 @@
     width: 28%;
     height: 80%;
     border-radius: 10px 0px 0px 10px;
-    padding: 2.5rem;
+    padding: 1.5rem 2.5rem 2.5rem 2.5rem;
     position: fixed;
     right: 0;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.carrito-container h2::after {
+    content: "";
+    display: block;
+    width: 90%;
+    margin: 0.5rem auto 0 auto;
+    height: 2px;
+    background-color: #000;
+    font-weight: bold;
+}
+
+.carrito-container h3 {
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.date-hour-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-date-hour {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon-date-hour:hover {
+    transform: scale(1.2);
+}
+
+.text-date {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+.pizza-container {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #000;
+    margin-top: 1rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
+.item-img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.item-img img:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    min-width: 0;
+}
+
+.text-info {
+    text-align: center;
+   align-self: center;    
+}
+
+
+.pizza-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.pizza-description {
+    margin: 0.2rem 0 0.5rem 0;
+    font-size: 0.7rem;
+    color: #555;
+}
+
+.cant-control {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 0.5rem;
+    margin-left: 10px;
+}
+
+.cant-control button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cant {
+    min-width: 60px;
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+.price-trash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70px;
+    height: 100%;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.btn-trash {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-trash img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-trash:hover img {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.total-container {
+    margin-top: 2rem;
+    padding: 0 10px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.total-final {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 1px solid #000;
+    padding-top: 0.5rem;
+}
+
+.btn-pagar {
+    position: absolute;
+    bottom: 0.8rem;        /* más abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1.5rem; /* más pequeño */
+    background-color: #ff6f61;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;     /* letra más pequeña */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(255, 111, 97, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.btn-pagar:hover {
+    background-color: #e85c50;
+    box-shadow: 0 5px 10px rgba(232, 92, 80, 0.6);
 }

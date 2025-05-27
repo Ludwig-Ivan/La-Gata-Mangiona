@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/public/css/header.css">
     <link rel="stylesheet" href="/public/css/contacto.css">
     <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/carrito.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +20,9 @@
             <nav>
                 <ul>
                     <li><a class="jomolhari regular-20 text-white" href="/app/views/index.html">Inicio</a></li>
-                    <li><a class="jomolhari regular-20 text-white" href="">Menu</a></li>
+                    <li><a class="jomolhari regular-20 text-white" href="/app/views/menu.html">Menu</a></li>
                     <li><a class="jomolhari regular-20 text-white" href="/app/views/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a class="jomolhari regular-20 text-white" href="carrito.html"><img
+                    <li><a id="carrito_btn" class="jomolhari regular-20 text-white" href="#"><img
                             src="../../public/icons/cart-shopping-fast.png" alt="Icono de carrito-compra"></a></li>
             </ul>
         </nav>
@@ -47,7 +48,7 @@
                 <div class="sections bg-almendra-suave">
                     <img class="icon" src="/public/icons/icon-ubicacion.png" alt="Icono ubicacion">
                     <div class="section-text-container inter medium-32">
-                        <p>Av.Hidalgo #456, Colonia Americana, Guadalajara, Jalisco</p>
+                        <p>Av.Hidalgo #456, Col. Americana, Guadalajara, Jalisco</p>
                     </div>
                 </div>
             </div>
@@ -58,6 +59,99 @@
                 <img src="/public/img/mapa.png" alt="Imagen del mapa">
             </a>
         </div>
+        <nav id="carrito_cnt" class="carrito-container bg-marfil-suave inter regular-24">
+            <h2>Carrito de compras</h2>
+            <h3 class="inter regular-20">Fecha y hora de entrega:</h3>
+            <div class="date-hour-container bg-marfil-suave">
+                <span class="text-date">14 abril 2020, 10:00 a.m.</span>
+                <img src="/public/icons/icon-calendar-hour.png" alt="Icono calendario-hora" class="icon-date-hour">
+            </div>
+            <div class="pizza-container bg-marfil-suave">
+                <div class="item-img">
+                    <img src="/public/img/pizza4.jpg">
+                </div>
+                <div class="item-details">
+                    <div class="text-info">
+                        <p class="pizza-name">Margherita</p>
+                        <p class="pizza-description">Un clásico napolitano</p>
+                    </div>
+                    <div class="cant-control">
+                        <button class="btn-dis">-</button>
+                        <span class="cant"> 3 piezas</span>
+                        <button class="btn-aum">+</button>
+                    </div>
+                </div>
+                <div class="price-trash">
+                        <p class="price">$250.00</p>
+                        <button class="btn-trash" title="Eliminar">
+                            <img src="/public/icons/icon-trash.png" alt="Eliminar producto">
+                        </button>
+                </div>
+            </div>
+            <div class="pizza-container bg-marfil-suave">
+                <div class="item-img">
+                    <img src="/public/img/pizza5.jpg">
+                </div>
+                <div class="item-details">
+                    <div class="text-info">
+                        <p class="pizza-name">Diavola</p>
+                        <p class="pizza-description">Sabor picante</p>
+                    </div>
+                    <div class="cant-control">
+                        <button class="btn-dis">-</button>
+                        <span class="cant"> 1 piezas</span>
+                        <button class="btn-aum">+</button>
+                    </div>
+                </div>
+                <div class="price-trash">
+                        <p class="price">$200.00</p>
+                        <button class="btn-trash" title="Eliminar">
+                            <img src="/public/icons/icon-trash.png" alt="Eliminar producto">
+                        </button>
+                </div>
+            </div>
+            <div class="pizza-container bg-marfil-suave">
+                <div class="item-img">
+                    <img src="/public/img/pizza6.jpg">
+                </div>
+                <div class="item-details">
+                    <div class="text-info">
+                        <p class="pizza-name">Boscaiola</p>
+                        <p class="pizza-description">Tradicional italiana</p>
+                    </div>
+                    <div class="cant-control">
+                        <button class="btn-dis">-</button>
+                        <span class="cant"> 1 piezas</span>
+                        <button class="btn-aum">+</button>
+                    </div>
+                </div>
+                <div class="price-trash">
+                        <p class="price">$300.00</p>
+                        <button class="btn-trash" title="Eliminar">
+                            <img src="/public/icons/icon-trash.png" alt="Eliminar producto">
+                        </button>
+                </div>
+            </div>
+            <div class="total-container">
+                <div class="total-row">
+                    <span class="label">Subtotal:</span>
+                    <span class="amount">$750.00</span>
+                </div>
+                <div class="total-row">
+                    <span class="label">IVA:</span>
+                    <span class="amount">$0.00</span>
+                </div>
+                <div class="total-row">
+                    <span class="label">Serv. domicilio:</span>
+                    <span class="amount">$10.00</span>
+                </div>
+                <div class="total-row total-final">
+                    <span class="label">Total:</span>
+                    <span class="amount">$760.00</span>
+                </div>
+            </div>
+            <button class="btn-pagar">Pagar orden</button>
+        </nav>
     </main>
 
     <footer class="footer bg-black">
@@ -78,4 +172,5 @@
     </footer>
 </body>
 
+<script src="/public/js/carrito.js"></script>
 </html>
