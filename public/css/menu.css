@@ -28,7 +28,7 @@ nav ul li:nth-child(4) {
 }
 
 nav ul li a {
-    transition: transform 0.3s ease, color 0.3s ease font-size 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
     display: inline-block;
 }
 
@@ -54,17 +54,23 @@ body {
     flex-direction: column;
 }
 
+header {
+    position: relative;
+    z-index: 1000;
+    /* Para que siempre quede visible encima del carrito */
+}
+
 main {
     flex: 1;
-    /* Ocupa todo el espacio entre header y footer */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
     overflow: hidden;
     z-index: 0;
+    /* Elimina el padding-right para que el main ocupe todo el ancho */
+    padding-right: 0;
 }
 
 main::before {
@@ -86,24 +92,28 @@ main::before {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    align-items: stretch;
+    /* Centra las tarjetas horizontalmente */
+    align-items: center;
+    /* Centra las tarjetas verticalmente */
     flex-wrap: wrap;
+    max-width: 900px;
+    /* Limita ancho para que no se estiren demasiado */
+    margin: 0 auto;
+    /* Centra el contenedor en su padre */
 }
 
 .card {
     background-color: rgba(0, 0, 0, 0.75);
-    /* Menos transparencia */
     color: white;
     border-radius: 1rem;
     padding: 1rem;
     width: 200px;
-    min-height: 350px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
     backdrop-filter: blur(3px);
-    /* 🎯 Difuminado más leve */
     -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -129,7 +139,6 @@ main::before {
     text-align: center;
 }
 
-
 .card-content h3 {
     margin: 0 0 0.5rem;
     font-size: 1.1rem;
@@ -145,22 +154,18 @@ main::before {
 
 .card button {
     background-color: #e63946;
-    /* rojo intenso */
     color: white;
     padding: 0.6rem 1.2rem;
     border: none;
-    /* sin bordes */
     border-radius: 0.6rem;
     font-weight: 600;
     margin-top: auto;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(230, 57, 70, 0.5);
-    /* sombra roja suave */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card button:hover {
     background-color: #b32b39;
-    /* rojo oscuro para hover */
     box-shadow: 0 6px 12px rgba(179, 43, 57, 0.7);
 }

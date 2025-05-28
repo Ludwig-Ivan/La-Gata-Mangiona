@@ -105,7 +105,7 @@
 
 .text-info {
     text-align: center;
-   align-self: center;    
+    align-self: center;
 }
 
 
@@ -180,11 +180,25 @@
 }
 
 @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .total-container {
@@ -209,14 +223,17 @@
 
 .btn-pagar {
     position: absolute;
-    bottom: 0.8rem;        /* más abajo */
+    bottom: 0.8rem;
+    /* más abajo */
     left: 50%;
     transform: translateX(-50%);
-    padding: 0.5rem 1.5rem; /* más pequeño */
+    padding: 0.5rem 1.5rem;
+    /* más pequeño */
     background-color: #ff6f61;
     color: white;
     font-weight: 600;
-    font-size: 0.9rem;     /* letra más pequeña */
+    font-size: 0.9rem;
+    /* letra más pequeña */
     border: none;
     border-radius: 20px;
     cursor: pointer;
